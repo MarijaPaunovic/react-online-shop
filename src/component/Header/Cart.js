@@ -8,7 +8,7 @@ function Cart() {
             <Dropdown align="end">
                 <Dropdown.Toggle variant="success">
                     <FaShoppingCart color='white' fontSize='25px' />
-                    <Badge bg="success">{10}</Badge>
+                    <Badge bg="success">{0}</Badge>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu style={{ minWidth: 370 }}>

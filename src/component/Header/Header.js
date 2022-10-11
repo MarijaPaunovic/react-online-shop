@@ -1,7 +1,8 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import './Header.css'
+import './Header.css';
+import Logo from './Logo';
 import SearchBar from './SearchBar';
 import Cart from './Cart';
 
@@ -10,9 +11,7 @@ function Header() {
         <div className='header'>
             <Navbar bg="dark" variant='dark'>
                 <Container>
-                    <Navbar.Brand href="#home">
-                        Online shop
-                    </Navbar.Brand>
+                    <Logo />
                     <SearchBar />
                     <Cart />
                 </Container>
