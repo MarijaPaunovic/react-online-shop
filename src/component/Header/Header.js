@@ -1,8 +1,9 @@
 import React from 'react';
-import { FormControl, Nav } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './Header.css'
+import SearchBar from './SearchBar';
+import Cart from './Cart';
 
 function Header() {
     return (
@@ -12,14 +13,8 @@ function Header() {
                     <Navbar.Brand href="#home">
                         Online shop
                     </Navbar.Brand>
-                    <Navbar.Text className='search'>
-                        <FormControl
-                            style={{ width: 500 }}
-                            placeholder='Search a product'
-                            className='m-auto'
-                        />
-                    </Navbar.Text>
-
+                    <SearchBar />
+                    <Cart />
                 </Container>
             </Navbar>
         </div>
