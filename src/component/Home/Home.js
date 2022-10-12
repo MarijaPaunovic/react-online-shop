@@ -5,11 +5,19 @@ const Home = () => {
 
     const { state: { products } } = CartState();
 
-    console.log(products);
+    // console.log(products);
 
     return (
-        <div>Home</div>
+        <div className='home'>
+            <div className="productContainer">
+                {
+                    products.length && products.map((prod) => {
+                        return <span>{prod.name}</span>
+                    })
+                }
+            </div>
+        </div>
     )
 }
 
-export default Home
+export default Home;
