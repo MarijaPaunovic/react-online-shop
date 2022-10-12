@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './Header.css';
 import Logo from './Logo';
 import SearchBar from './SearchBar';
-import Cart from './Cart';
+import CartIcon from './CartIcon';
 
 function Header() {
     return (
@@ -13,7 +13,7 @@ function Header() {
                 <Container>
                     <Logo />
                     <SearchBar />
-                    <Cart />
+                    <CartIcon />
                 </Container>
             </Navbar>
         </div>

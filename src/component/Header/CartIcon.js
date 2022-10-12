@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, Dropdown, Badge } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa';
 
-function Cart() {
+function CartIcon() {
     return (
         <Nav>
             <Dropdown align="end">
@@ -19,4 +19,4 @@ function Cart() {
     )
 }
 
-export default Cart;
+export default CartIcon;
