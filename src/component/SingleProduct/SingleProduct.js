@@ -35,30 +35,30 @@ const SingleProduct = ({ prod }) => {
                         <ListGroup.Item><b>Keywords:</b><br />{prod.keywords}</ListGroup.Item>
                         <ListGroup.Item><b>Features:</b>{featuresText}</ListGroup.Item>
                     </ListGroup>
-                    {/* {cart.some((p) => p.id === prod.id) ? ( */}
-                    <Button
-                        variant="danger"
-                        onClick={() =>
-                            dispatch({
-                                type: "REMOVE_FROM_CART",
-                                payload: prod,
-                            })
-                        }
-                    >
-                        Remove from Cart
-                    </Button>
-                    {/* ) : ( */}
-                    <Button
-                        onClick={() =>
-                            dispatch({
-                                type: "ADD_TO_CART",
-                                payload: prod,
-                            })
-                        }
-                    >
-                        Add to Cart
-                    </Button>
-                    {/* )} */}
+                    {cart.some((p) => p.id === prod.id) ? (
+                        <Button
+                            variant="danger"
+                            onClick={() =>
+                                dispatch({
+                                    type: "REMOVE_FROM_CART",
+                                    payload: prod,
+                                })
+                            }
+                        >
+                            Remove from Cart
+                        </Button>
+                    ) : (
+                        <Button
+                            onClick={() =>
+                                dispatch({
+                                    type: "ADD_TO_CART",
+                                    payload: prod,
+                                })
+                            }
+                        >
+                            Add to Cart
+                        </Button>
+                    )}
                 </Card.Body>
                 <Card.Footer className="text-muted">{prod.url}</Card.Footer>
             </Card>
