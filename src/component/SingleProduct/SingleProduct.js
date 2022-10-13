@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, ListGroup, Button } from 'react-bootstrap';
 import { CartState } from "../../Context/Context";
 import parse from 'html-react-parser';
-import "./SingleProduct.css";
 
 const SingleProduct = ({ prod }) => {
 

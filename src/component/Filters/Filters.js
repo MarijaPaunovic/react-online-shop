@@ -1,14 +1,15 @@
 import React from 'react';
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { CartState } from "../../Context/Context";
-import "./Filters.css";
 
 const Filters = () => {
 
     const {
-        productDispatch,
         productState: { sort },
+        productDispatch
     } = CartState();
+
+    // console.log({sort});
 
     return (
         <div className="filters">
@@ -33,7 +34,7 @@ const Filters = () => {
                 <Form.Check
                     inline
                     label="Price Descending"
-                    name="group1"
+                    name="group2"
                     type="radio"
                     id={`inline-2`}
                     onChange={() =>
@@ -46,30 +47,18 @@ const Filters = () => {
                 />
             </span>
             <span>
-                <Form.Check
-                    inline
-                    label="Filter products by category"
-                    name="group1"
-                    type="checkbox"
+                <Form.Control
+                    placeholder="Filter products by category"
+                    type="text"
                     id={`inline-3`}
-                    onChange={() =>
+                    onChange={(e) =>
                         productDispatch({
                             type: "FILTER_BY_CATEGORY",
+                            payload: e.target.value,
                         })
                     }
-
                 />
             </span>
-            <Button
-                variant="light"
-                onClick={() =>
-                    productDispatch({
-                        type: "CLEAR_FILTERS",
-                    })
-                }
-            >
-                Clear Filters
-            </Button>
         </div>
     )
 }

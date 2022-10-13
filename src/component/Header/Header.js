@@ -13,7 +13,6 @@ import { AiFillDelete } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
 import Logo from './Logo';
 import { CartState } from "../../Context/Context";
-import './Header.css';
 
 function Header() {
 
