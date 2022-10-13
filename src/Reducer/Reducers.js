@@ -3,7 +3,7 @@ export const cartReducer = (state, action) => {
         case "FETCH_SUCCESS":
             return {
                 products: action.payload,
-                cart: action.payload
+                cart: []
             };
         case "ADD_TO_CART":
             return { ...state, cart: [...state.cart, { ...action.payload, qty: 1 }] };

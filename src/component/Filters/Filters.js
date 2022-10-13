@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Form } from "react-bootstrap";
 import { CartState } from "../../Context/Context";
-// import Rating from '../Rating/Rating';
 import "./Filters.css";
 
 const Filters = () => {

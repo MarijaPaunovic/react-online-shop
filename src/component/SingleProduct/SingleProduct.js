@@ -6,8 +6,6 @@ import "./SingleProduct.css";
 
 const SingleProduct = ({ prod }) => {
 
-    // console.log(prod.images)
-
     const {
         state: { cart },
         dispatch,
