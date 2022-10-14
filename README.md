@@ -1,3 +1,15 @@
+# Simple E-commerce Online shop web app
+
+Landing page with all products listed. Dynamic functionalities like add/ remove products from a shopping cart, product details page viewing in modal, amount control, sort products by price (ascending/descending), search products by name or description and filter products by category.
+
+Develop an app with React JS and React Router with Context API and useReducer hooks for state management. Design was made with React Bootstrap framework.
+
+You can check how app looks and works on the following link:
+
+https://marija-paunovic-react-online-shop.netlify.app/
+
+(If you have any problem viewing the page correctly, please install the CORS policy extension on your browser)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
